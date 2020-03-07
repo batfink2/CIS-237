@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Movie Log</title>
+		<! –– stylesheet links-->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/Style.css">
+	</head>
+	<body>
+
+	<! –– Navbar setup-->
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+		
+			<a class="navbar-brand" href="#">Movie Log</a>
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="Add.html">Add Movie</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="print.php">Movies Watched</a>
+				</li>
+			</ul>
+		</nav>
+	
+		<h1>Add Movie</h1>
+	
+		<form action="print.php" method="post" class="was-validated">
+			<! –– Movie name input-->
+			<div class="form-group row">
+				<label for="MovieName" class="col-sm-2 col-form-label">Movie Name</label>
+				<div class="col-sm-9">
+				<input type="text" class="form-control" id="MovieName" name="MovieName" required="required">
+				</div>
+			</div>
+			<p></p>
+			<! –– Director name input-->
+			<div class="form-group row">
+				<label for="DirectorName" class="col-sm-2 col-form-label">Director's Name</label>
+				<div class="col-sm-9">
+				<input type="text" class="form-control" id="DirectorName" name="DirectorName" required="required">
+				</div>
+			</div>
+			<p></p>
+			<! –– artist input-->
+			<div class="form-group row">
+				<label for="Artist" class="col-sm-2 col-form-label">Artist</label>
+				<div class="col-sm-9">
+				<input type="text" class="form-control" id="Artist" name="Artist" required="required">
+				</div>
+			</div>
+			<p></p>
+		  
+			<p></p>
+			<! –– genre selection-->
+			<div class="row">
+				<div class="col-sm-2">
+				<label>Genre</label>
+				</div>
+				<div class="col-sm-9">
+					<label for="Genre"></label><select class="custom-select" id="Genre" name="Genre">
+						<option selected>Adventrue</option>
+						<option value="Action">Action</option>
+						<option value="Thriller">Thriller</option>
+						<option value="Comedy">Comedy</option>
+						<option value="Romance">Romance</option>
+					</select>
+				</div>
+			</div>	
+			
+			<p></p>
+			<! –– number rating-->
+			<div class="row">
+				<div class="col-sm-2">
+				<label>Rating</label>
+				</div>
+				<div class="col-md-3">
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="customRadioInline1" name="Rating" class="custom-control-input" required="required" value="One">
+						<label class="custom-control-label" for="customRadioInline1">1</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="customRadioInline2" name="Rating" class="custom-control-input" required="required" value="Two">
+						<label class="custom-control-label" for="customRadioInline2">2</label>						
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="customRadioInline3" name="Rating" class="custom-control-input" required="required" value="Three">
+						<label class="custom-control-label" for="customRadioInline3">3</label>						
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="customRadioInline4" name="Rating" class="custom-control-input" required="required" value="Four">
+						<label class="custom-control-label" for="customRadioInline4">4</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="customRadioInline5" name="Rating" class="custom-control-input" required="required" value="Five">
+						<label class="custom-control-label" for="customRadioInline5">5</label>
+					</div>
+				</div>
+			</div>
+			
+			<p></p>
+			<! –– submit button-->
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>
